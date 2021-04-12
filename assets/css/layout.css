@@ -1,55 +1,342 @@
-.container{
+/* media querys */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) { 
+
+
+    .img-header img{
+           
+        margin-top: -4rem;
+        border: 4px solid #fff;
+        
+     
+    }
+    .titulo-header h2{
+        font-weight: normal;
+         font-size: 2rem;
+         margin-bottom: -1rem;
+      
+       
+    } 
+  
+    .menu{
+    
+        text-align: center;
+      } 
+
+     .logo{
+         text-align: center;
+         margin-bottom: -4.3rem;
+     } 
+
+     
+     .car{
+        margin-top: 70px;
+         
+         width: 100%;
+         display: inline;
+         color: black;
+         
+        } 
+        .section-cards{
+            margin-top: 2rem;
+          text-align: center;
+          padding: 10rem 1.2rem;
+        
+     }
+
+
+}
+
+@media (min-width: 768px)  { 
+    
+    .section-bars{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .bars{
+        width: 33.333%;
+    }
+    .nav-header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section-cards{
+        display: flex;
+        justify-content: space-around;
+    } 
+    .car{
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.col-2{
+    width: 16.666%;
+}
+.col-4{
+    width: 33.333%;
+}
+.col-3{
+width: 25%;
+}
+.col-10{
+    width:83.333%;
+
+}
+.col-6{
+    width: 50%;
+ 
+ }
+.col-8{
+   width: 66.666%;
+
+}
+
+.col-12{
+    width: 100%;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+    color: honeydew;
+   font-family: 'Nunito Sans', sans-serif;
+}
+.container-header{
     width:100%;
     height: 100vh;
-    background-image:url('../img/bg-dev.jpg');
-    background-size:cover;
-   
-     
-  }
-     /* .capa{
+    background-color: transparent;
+    background-image: url(../img/bg-dev.jpg);
+    background-size:100% 100%;
+  
+  
+}
     
-        background:rgba(49, 47, 47, 0.6);
+     .capa{
+    
+        z-index: 1;
+        background:rgba(17, 17, 17, 0.6);
         position:absolute;
         width:100%;
-        height:600px;
-    }  */
- 
+        height: 100vh;
+        
+    }   
+
+          
+ .logo{
+
+    margin-top: 0.5rem;
+
+ }
 
 .nav-header{
-    
-    display: flex;
-   justify-content: space-between;
-   padding: 1rem 4rem;
-
-}
-
-.nav-header img{
-
-    background-image:cover;
-
-}
-
-.nav-header li{
-
-    display: inline-block;
-    
-    padding: 0.4rem;
+ 
+  z-index: 22;
+  position: relative;
   
 }
 
+
+
+.nav-header li{
+
+    display: inline-block;  
+   
+    
+}
+
+
 .nav-header li a{
 
+ 
     text-decoration: none;
     color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 3.6rem ;
+    padding-right: 0.6rem;
+    display: inline-block;  
+   
+    
 
 }
 
 .titulo-header{
 
-   text-align:center;
- font-family: 'Volkhov', serif;
+    z-index: 29;
+    position: relative;
+   text-align: center;
+   font-family: 'Nunito Sans', sans-serif;
+   font-style: italic;
+   font-weight: 800;
    font-size:1.6rem;
    color:white;
-   margin-top:9rem;
+   margin-top:12rem;
+   margin-bottom: 8rem;
 
-}
+        }
+
+        .img-header img{
+
+            border: 0.2rem solid #fff;
+            height: auto;
+            border-radius:50% ;
+            margin-bottom: 3rem;
+        }
+
+    .container{
+
+            width: 90%;
+            margin: auto;
+        color: black;
+        text-align: center;
+       
+    }
+    /* skills section */
+
+    .skills-title{
+
+        font-family: 'Nunito Sans', sans-serif;
+        font-size:  3rem;
+        font-weight: 400;
+   
+
+    }
+    .skylls-text{
+       margin: auto;
+        width: 60%;
+        margin-top: 2rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.2rem;
+        color: #585858;
+    }
+   
+        
+    .progress-container {
+        border-radius: 10px;
+        background-color: lightgrey;
+        margin-top: 1rem;
+        
+    }
+   
+    .progress {
+        height: 0.4rem;
+        background-image: linear-gradient(55deg, #aece69 0, #a2d16f 10%, #96d376 20%, #89d57e 30%, #7bd787 40%, #6cd890 50%, #5bd99a 60%, #47daa4 70%, #2bdbae 80%, #00dcb9 90%, #00dcc4 100%);
+        border-radius: 10px;
+       
+    }
+    .progress.percent-80 {
+        width: 80%;
+        padding-right: 6rem;
+    }
+    .progress.percent-70 {
+        width: 70%;
+        padding-right: 6rem;
+    }
+    .bars{
+       margin-right: 4rem;
+        margin-top: 3rem;   
+    }
+
+    .name-bar span{
+        display: flex;
+       justify-content: start;  
+        }
+
+    .container-services{
+
+        margin-top: 4rem;
+        width:100%;
+        height: 100vh;
+        background-color: transparent;
+        background-image: url(../img/bg-dev-1.jpg);
+        background-attachment: fixed;
+        background-size:100% 100%;
+       
+        
+       
+  
+     }
+   
+
+     .services-title  {
+         padding-top: 4rem;
+         position: relative;
+         z-index: 2;
+         text-align: center;
+         font-family: 'Nunito Sans', sans-serif;
+         font-size:  4rem;
+         
+     }
+   
+     .services-text {
+        position: relative;
+        z-index: 3;
+        margin: auto;
+         width: 60%;
+         margin-top: 2rem;
+         margin-bottom: 6rem;
+         font-family:  sans-serif;
+         font-size: 1.2rem;
+         color: #faf1f1;
+     }
+
+     .title-card{
+        display: inline-block;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size:  1.3rem;
+        font-weight: 800;
+        margin-top: 1.5rem;
+
+     }
+     .text-card{
+         padding: 2rem 4rem;
+         font-size: 1.2rem;
+         padding-bottom: 3rem;
+    
+    
+     }
+     .icono-card{
+         display: inline-block;
+         margin-top: 3rem;
+        
+
+     }
+
+     .container-cards{
+         
+        width: 90%;
+        margin: auto;
+       
+       
+       
+      
+
+     }
+     .car{
+       
+         
+         width:29%;
+         height: 100%;
+        position: relative;
+        z-index: 4;
+       border-radius: 4px;
+        text-align: center;
+        
+     }
