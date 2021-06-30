@@ -42,6 +42,7 @@
         } 
         .section-cards{
             margin-top: 8rem;
+            margin-bottom: 4rem;
           text-align: center;
           padding:0  1.2rem;
         
@@ -66,8 +67,12 @@
     }
 
     .section-cards{
-        display: flex;
+      
         justify-content: space-around;
+        margin-bottom: 4rem;
+    margin-top: 1rem;
+    display: inline-flex;
+
     } 
     .car{
         background: rgba(255, 255, 255, 0.1);
